@@ -1,4 +1,4 @@
-#This is a News Application developed using ReactJS 
+# This is a News Application developed using ReactJS 
 ## Requirements
 - NodeJS
 - Git 
@@ -13,7 +13,8 @@
 - install node modules
 - npm i
 ###to start applicaion 
-- npm start 
+- npm start
+- open browser
 # Results
 ![Screenshot (179)](https://github.com/user-attachments/assets/2cce5a7d-d79c-43d9-a9c4-561ac0571e58)
 
