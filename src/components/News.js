@@ -55,6 +55,8 @@ export class News extends Component {
   constructor(props) {
     super(props);
     console.log("hello iam a constructor from News component");
+
+    console.log("country" + this.country);
     this.state = {
       articles: this.articles,
       country: this.country,
@@ -65,9 +67,9 @@ export class News extends Component {
       this.props.category
     )} - NewsMonkey`;
   }
-  //${this.props.country}
+
   async updateNews() {
-    const url = ` https://newsapi.org/v2/top-headlines?country=us&category=${this.props.category}&apiKey=806e8e4656ff4e009ef348511f5bde9a&page=${this.state.page}&pageSize=${this.props.pageSize}`;
+    const url = ` https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=806e8e4656ff4e009ef348511f5bde9a&page=${this.state.page}&pageSize=${this.props.pageSize}`;
     console.log(this.props.country);
     console.log(this.props.category);
     console.log(this.props.pageSize);
